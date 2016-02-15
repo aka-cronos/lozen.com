@@ -24,6 +24,20 @@
 
 
   <section class="mainSlider">
+    <ul>
+      <li class="slide_01">
+        <h2>Coordinación <br> mundial efectiva</h2>
+        <a href="#">COTIZA AHORA</a>
+      </li>
+      <li class="slide_02">
+        <h2>Coordinación <br> mundial efectiva</h2>
+        <a href="#">COTIZA AHORA</a>
+      </li>
+      <li class="slide_01">
+        <h2>Coordinación <br> mundial efectiva</h2>
+        <a href="#">COTIZA AHORA</a>
+      </li>
+    </ul>
   </section>
 
   <section class="homeAbout">
@@ -40,5 +54,16 @@
 
   <footer>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="/scripts/minjs/unslider.js"></script>
+
+  <script>
+    $(document).ready(function($) {
+      $('.mainSlider').unslider({
+        nav: false
+      });
+    });
+  </script>
 </body>
 </html>
