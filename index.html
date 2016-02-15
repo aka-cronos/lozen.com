@@ -6,50 +6,129 @@
   <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <nav>
+
+  <header class="mainHeader">    
     <a href="#" class="mainLogo">
-      <img src="/img/logo.png" alt="">
+      <img src="/img/mainLogo.png" alt="">
     </a>
+    
+    <nav class="mainNav">      
+      <a class="mainNav-item" href="#">SOMOS</a>
+      <a class="mainNav-item" href="#">MERCADOS</a>
+      <a class="mainNav-item" href="#">SERVICIOS</a>
+      <a class="mainNav-item" href="#">COTIZA</a>
+      <a class="mainNav-item" href="#">CONTACTO</a>
+      <a class="btn lang" href="#">ESPAÑOL</a>
+    </nav>
 
-    <ul>
-      <li><a href="#">SOMOS</a></li>
-      <li><a href="#">MERCADOS</a></li>
-      <li><a href="#">SERVICIOS</a></li>
-      <li><a href="#">COTIZA</a></li>
-      <li><a href="#">CONTACTO</a></li>
-    </ul>
-
-    <a href="#" class="lang">ESPAÑOL</a>
-  </nav>
+  </header>
 
 
   <section class="mainSlider">
-    <ul>
-      <li class="slide_01">
-        <h2>Coordinación <br> mundial efectiva</h2>
-        <a href="#">COTIZA AHORA</a>
+    <div class="slider">
+      <ul>
+        <li class="slide slide_01">
+          <div class="slide-container">
+            <h2 class="slide-title">Coordinación <br> mundial efectiva</h2>
+            <a class="btn" href="#">COTIZA AHORA</a>
+          </div>
+        </li>
+        <li class="slide slide_01">
+          <div class="slide-container">
+            <h2 class="slide-title">Coordinación <br> mundial efectiva</h2>
+            <a class="btn" href="#">COTIZA AHORA</a>
+          </div>
+        </li>
+        <li class="slide slide_01">
+          <div class="slide-container">
+            <h2 class="slide-title">Coordinación <br> mundial efectiva</h2>
+            <a class="btn" href="#">COTIZA AHORA</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="homeAbout">
+    <div class="homeAbout-info">
+      <p class="subtitle">EN LOZEN PROPORCIONAMOS SERVICIOS PERSONALIZADOS DE LOGÍSTICA INTERNACIONAL PARA QUE NUESTROS CLIENTES TENGAN LA CONFIANZA DE RECIBIR SU MERCANCÍA EN TIEMPO Y FORMA.</p>
+      <a class="btn" href="#">CONOCE MÁS</a>
+    </div>
+    <div class="homeAbout-image"></div>
+  </section>
+
+  <section class="homeServices">
+    <h2 class="title title__orange">Nuestros Servicios</h2>
+    <ul class="services">
+      <li class="services-item">
+        <img src="/img/icon-cadena-suministro.png" alt="">
+        Cadena de suministro
       </li>
-      <li class="slide_02">
-        <h2>Coordinación <br> mundial efectiva</h2>
-        <a href="#">COTIZA AHORA</a>
+      
+      <li class="services-item">
+        <img src="/img/icon-aereo.png" alt="">
+        Áereo
       </li>
-      <li class="slide_01">
-        <h2>Coordinación <br> mundial efectiva</h2>
-        <a href="#">COTIZA AHORA</a>
+      
+      <li class="services-item">
+        <img src="/img/icon-proyectos.png" alt="">
+        Proyectos
+      </li>
+      
+      <li class="services-item">
+        <img src="/img/icon-almacenaje-distribucion.png" alt="">
+        Almacenaje y Distribución
+      </li>
+      
+      <li class="services-item">
+        <img src="/img/icon-terrestre.png" alt="">
+        Terrestre
+      </li>
+      
+      <li class="services-item">
+        <img src="/img/icon-servicio-puerta.png" alt="">
+        Servicio Puerta-Puerta
+      </li>
+      
+      <li class="services-item">
+        <img src="/img/icon-seguros.png" alt="">
+        Seguros
+      </li>
+      
+      <li class="services-item">
+        <img src="/img/icon-consultoria.png" alt="">
+        Consultoria
+      </li>
+      
+      <li class="services-item">
+        <img src="/img/icon-maritimo.png" alt="">
+        Matrítimo
+      </li>
+      
+      <li class="services-item">
+        <img src="/img/icon-menaje-casa.png" alt="">
+        Menaje de Casa
+      </li>
+      
+      <li class="services-item">
+        <img src="/img/icon-servicios-aduanales.png" alt="">
+        Servicios Aduanales
       </li>
     </ul>
   </section>
 
-  <section class="homeAbout">
-  </section>
-
-  <section class="homeServices">
-  </section>
-
   <section class="homeQuote">
+    <h2 class="title title__white">¿Necesitas una Cotización?</h2>
+    <p class="subtitle">Cuéntenos cuáles son sus necesidades. <br>
+    Estamos seguros de que podremos ofrecerle <br>
+    una respuesta a sus necesidades.</p>
+    <a class="btn" href="#">COTIZA AHORA</a>
   </section>
 
-  <section class="careers">
+  <section class="homeCareers">
+    <h2>¡Trabaja con nosotros!</h2>
+    <p class="subtitle">Platícanos por que te gustaríaser parte de la Familia Lozen. <br> Envía tu CV y platícanos acerca de tu experiencia.</p>
+    <a class="btn" href="#">ENVÍA CV AHORA</a>
   </section>
 
   <footer>
@@ -60,7 +139,7 @@
 
   <script>
     $(document).ready(function($) {
-      $('.mainSlider').unslider({
+      $('.slider').unslider({
         nav: false
       });
     });

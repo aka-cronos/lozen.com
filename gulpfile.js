@@ -65,7 +65,7 @@ gulp.task('styles', function(){
 
   gulp.src('css/stylus/styles.styl')
       .pipe(stylus({
-        compress: true,
+        compress: false,
         use: [rupture()]
       }))
       .pipe(postcss(processors))
