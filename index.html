@@ -53,7 +53,7 @@
 
   <section class="homeAbout">
     <div class="homeAbout-info">
-      <p class="subtitle">EN LOZEN PROPORCIONAMOS SERVICIOS PERSONALIZADOS DE LOGÍSTICA INTERNACIONAL PARA QUE NUESTROS CLIENTES TENGAN LA CONFIANZA DE RECIBIR SU MERCANCÍA EN TIEMPO Y FORMA.</p>
+      <p class="subtitle">EN LOZEN PROPORCIONAMOS SERVICIOS <br> PERSONALIZADOS DE LOGÍSTICA <br> INTERNACIONAL PARA QUE NUESTROS <br>CLIENTES TENGAN LA CONFIANZA DE RECIBIR <br> SU MERCANCÍA <strong>EN TIEMPO Y FORMA.</strong></p>
       <a class="btn" href="#">CONOCE MÁS</a>
     </div>
     <div class="homeAbout-image"></div>
@@ -128,15 +128,36 @@
   </section>
 
   <section class="homeCareers">
-    <h2>¡Trabaja con nosotros!</h2>
+    <h2 class="title title__white">¡Trabaja con nosotros!</h2>
     <p class="subtitle">Platícanos por que te gustaríaser parte de la Familia Lozen. <br> Envía tu CV y platícanos acerca de tu experiencia.</p>
     <a class="btn" href="#">ENVÍA CV AHORA</a>
   </section>
 
   <footer>
-    
+    <div class="footerLinks">
+      <a class="footerLogo" href="/">
+        <img src="/img/footerLogo.png" alt="Lozen Logo">
+      </a>
 
-    <p class="direction">Dr. Angel Martínez Villarreal 509-A  Col. Chepevera, 64030, Monterrey, NL México | T. +52 (81) 8370.7180 / 84</p>
+      <nav class="footerNav">
+        <a class="footerNav-item" href="/somos.html">SOMOS</a>
+        <a class="footerNav-item" href="/mercados.html">MERCADOS</a>
+        <a class="footerNav-item" href="/servicios.html">SERVICIOS</a>
+        <a class="footerNav-item" href="/cotiza.html">COTIZA</a>
+        <a class="footerNav-item" href="">CONTACTO</a>
+      </nav>
+
+      <div class="followUs">
+        <p>Follow Us:</p>
+        <a class="followUs-item" href="#"><img src="/img/icon-facebook.png" alt="Facebook"></a>
+        <a class="followUs-item" href="#"><img src="/img/icon-twitter.png" alt=""></a>
+        <a class="followUs-item" href=""><img src="/img/icon-linkedin.png" alt=""></a>
+      </div>
+    </div>
+    
+    <div>
+      <p class="direction">Dr. Angel Martínez Villarreal 509-A  Col. Chepevera, 64030, Monterrey, NL México | T. +52 (81) 8370.7180 / 84</p>
+    </div>
     
     <div class="legals">
       <p class="rights">
@@ -150,13 +171,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="/scripts/minjs/unslider.js"></script>
-
-  <script>
-    $(document).ready(function($) {
-      $('.slider').unslider({
-        nav: false
-      });
-    });
-  </script>
+  <script src="/scripts/minjs/main.js"></script>
 </body>
 </html>

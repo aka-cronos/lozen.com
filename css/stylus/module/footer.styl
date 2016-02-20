@@ -1,76 +1,60 @@
-// footer
-//   clear fix
-//   padding-top 2rem
-//   padding-bottom 2rem
-//   background-color $frisa__dark-grey
-//   color white
+footer
+  lost-utility edit
+  padding-top 2rem
+  padding-bottom 2rem
+  background-color $grey
+  border-bottom 4px solid $orange
+  color $lightGrey
+  font-size 14px
   
-//   p
-//     margin-top 0
-  
-// .container
-//   wrapped(920px)
-//   clear fix
-  
-//   +below(600px)
-//     wrapped(90%)
-//     text-align center
+  & > div
+    wrapped()
+    display flex
     
-// .social
-// .footerLinks
-//   lost-column 2/10 0
-  
-//   +below(600px)
-//     lost-column 1 0
-//     margin-bottom 2rem  
-  
-// .contactInfo
-//   lost-column 6/10 0
-  
-//   +below(600px)
-//     lost-column 1 0
-  
-// .social
-//   a
-//     text-decoration none
-    
-//   &-icon
-//     display inline-block
-    
-// .contactInfo
-//   span
-//     display inline-block
-//     margin-right 1rem
-//     margin-bottom .5rem
-//     font-size 14px
-    
-// .footerLinks
-//   a
-//     display inline-block
-//     margin-bottom 1rem
-//     color white
-//     text-decoration none
-//     font-weight 600
-//     font-size 14px
-    
-//   +below(600px)
-//    display none
+    +below($desktop)
+      wrapped(90%)
+      text-align center
 
-// .legals
-//   margin-top 2rem
-//   padding-top 2rem
-//   border-top 1px solid $frisa__grey
-//   text-align center
+.footerLinks
+  align-items baseline
+  margin-bottom 2rem
   
-//   &-item
-//     font-size .75rem
-//     display inline-block
-//     color white
-//     text-decoration none
-//     margin 0 .5rem
+  +below($desktop)
+    flex-direction column
+    align-items center
+  
+.followUs
+  
+  &-item
+    display inline-block
+    margin-right .5rem
+    max-width 26px
+    
+    img
+      width 100%
 
-// .separator
-//   display inline-block
-//   width 1px
-//   height .75rem
-//   background-color white
+.direction
+  margin-bottom 3rem
+    
+.legals
+  border-top 1px solid $lightGrey
+  padding-top 2rem
+  
+  +below($tablet)
+    flex-direction column
+    
+.tagline
+.followUs
+  font-weight 600
+
++above($tablet)
+  .rights
+  .tagline
+  .direction
+    lost-offset -2/12
+  
+  .rights
+    lost-column 5/12 flex
+    
+  .tagline
+    lost-column 3/12 flex
