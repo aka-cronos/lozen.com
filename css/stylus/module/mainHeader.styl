@@ -3,11 +3,13 @@
   shadow()
   position fixed
   top 0
-  z-index 100
   display flex
-  padding-top 1rem
-  padding-bottom 1rem
   width 100%
-  background-color white
   align-items center
+  z-index 10
+  background-color white
   justify-content space-between
+  
+  +below($desktop)
+    wrapped(90%)
+    

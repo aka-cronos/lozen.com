@@ -180,6 +180,7 @@ th {
   position: relative;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .unslider-wrap {
   position: relative;
@@ -219,9 +220,37 @@ th {
 .unslider-arrow.next {
   right: 30px;
 }
+@font-face {
+  font-family: 'Locator';
+  src: url("/fonts/locator-light.eot");
+  src: url("/fonts/locator-light.eot?#iefix") format('embedded-opentype'), url("/fonts/locator-light.woff2") format('woff2'), url("/fonts/locator-light.woff") format('woff'), url("/fonts/locator-light.ttf") format('truetype'), url("/fonts/locator-light.svg#locator-light") format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Locator';
+  src: url("/fonts/locator-regular.eot");
+  src: url("/fonts/locator-regular.eot?#iefix") format('embedded-opentype'), url("/fonts/locator-regular.woff2") format('woff2'), url("/fonts/locator-regular.woff") format('woff'), url("/fonts/locator-regular.ttf") format('truetype'), url("/fonts/locator-regular.svg#locator-regular") format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Locator';
+  src: url("/fonts/locator-medium.eot");
+  src: url("/fonts/locator-medium.eot?#iefix") format('embedded-opentype'), url("/fonts/locator-medium.woff2") format('woff2'), url("/fonts/locator-medium.woff") format('woff'), url("/fonts/locator-medium.ttf") format('truetype'), url("/fonts/locator-medium.svg#locator-medium") format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Locator';
+  src: url("/fonts/locator-bold.eot");
+  src: url("/fonts/locator-bold.eot?#iefix") format('embedded-opentype'), url("/fonts/locator-bold.woff2") format('woff2'), url("/fonts/locator-bold.woff") format('woff'), url("/fonts/locator-bold.ttf") format('truetype'), url("/fonts/locator-bold.svg#locator-bold") format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
 body {
   -webkit-font-smoothing: antialiased;
-  font-family: 'NeoSans', sans-serif;
+  font-family: 'Locator', sans-serif;
   text-rendering: optimizeLegibility;
   font-size: 16px;
 }
@@ -229,6 +258,15 @@ body {
 :before,
 :after {
   box-sizing: border-box;
+}
+.title__white,
+.title__small__white,
+.homeAbout-info .subtitle,
+.homeQuote .subtitle,
+.homeCareers .subtitle,
+.mainSlider-title,
+.slide-title {
+  color: #fff;
 }
 .text {
   color: #404041;
@@ -247,10 +285,6 @@ body {
 .title__small__small {
   font-size: 1.5rem;
   font-weight: 700;
-}
-.title__white,
-.title__small__white {
-  color: #fff;
 }
 .title__orange,
 .title__small__orange {
@@ -277,7 +311,6 @@ body {
   width: 50%;
 }
 .homeAbout-info {
-  color: #fff;
   text-align: center;
   background-color: #025595;
 }
@@ -291,8 +324,8 @@ body {
   clear: both;
 }
 .homeServices {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1200px / 2));
+  padding-right: calc(50% - (1200px / 2));
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -356,7 +389,8 @@ body {
   background: url("/img/homeCareers.jpg") center no-repeat;
   background-size: cover;
 }
-.btn {
+.btn,
+.btn__lang {
   display: inline-block;
   margin: 0;
   text-align: center;
@@ -365,6 +399,10 @@ body {
   padding: 0.25rem 0.5rem;
   border: 1px solid #fff;
   border-radius: 50px;
+  color: #fff;
+}
+.btn__lang {
+  background-color: #1bb1e7;
   color: #fff;
 }
 .mainLogo {
@@ -377,25 +415,29 @@ body {
   width: 100%;
 }
 .mainHeader {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1200px / 2));
+  padding-right: calc(50% - (1200px / 2));
   box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
   position: fixed;
   top: 0;
-  z-index: 100;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   width: 100%;
-  background-color: #fff;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
+  background-color: #fff;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media only screen and (max-width: 1200px) {
+  .mainHeader {
+    padding-left: calc(50% - (90% / 2));
+    padding-right: calc(50% - (90% / 2));
+  }
 }
 .mainNav {
   display: -webkit-flex;
@@ -406,26 +448,30 @@ body {
           align-items: center;
 }
 .mainNav-item {
+  position: relative;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   text-decoration: none;
   color: #404041;
-  margin-left: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  transition: 250ms top ease-in-out;
 }
-.mainNav-item:first-child {
-  margin-left: 0;
-}
-.mainNav .lang {
-  margin-left: 260px;
-  background-color: #1bb1e7;
-  color: #fff;
-}
-.mainSlider:after {
+.mainNav-item:before {
+  position: absolute;
+  top: -4px;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 4px;
   content: '';
-  display: table;
-  clear: both;
+  background-color: #1bb1e7;
+  transition: inherit;
 }
-.mainSlider {
-  background-color: #ff6347;
+.mainNav-item:hover:before,
+.mainNav-item.active:before {
+  top: 0;
 }
+.mainSlider,
 .slide {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -433,23 +479,34 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  height: 90vh;
 }
+.mainSlider-title,
 .slide-title {
-  color: #fff;
-  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-size: 3.25rem;
+  font-weight: 400;
 }
-.slide-container {
+.mainSlider-content,
+.slide-content {
   padding-left: calc(50% - (900px / 2));
   padding-right: calc(50% - (900px / 2));
+  width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .mainSlider-content,
+  .slide-content {
+    padding-left: calc(50% - (80% / 2));
+    padding-right: calc(50% - (80% / 2));
+  }
 }
 .slide_01 {
   background: url("/img/slide_01.jpg") center no-repeat;
   background-size: cover;
 }
 .sectionHeader {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1200px / 2));
+  padding-right: calc(50% - (1200px / 2));
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -484,8 +541,8 @@ body {
   clear: both;
 }
 .content {
-  padding-left: calc(50% - (1120px / 2));
-  padding-right: calc(50% - (1120px / 2));
+  padding-left: calc(50% - (1200px / 2));
+  padding-right: calc(50% - (1200px / 2));
   padding-top: 6rem;
   padding-bottom: 6rem;
 }

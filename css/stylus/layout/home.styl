@@ -7,9 +7,11 @@
     width 50%
     
   &-info
-    color white
     text-align center
     background-color $blue
+    
+    & .subtitle
+      @extend $text-white
 
   &-image
     background url('/img/homeAbout.jpg') center no-repeat
@@ -51,6 +53,9 @@
   background-size cover
   color white
   text-align center
+  
+  & .subtitle
+    @extend $text-white
   
 .homeCareers
   background url('/img/homeCareers.jpg') center no-repeat
