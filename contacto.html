@@ -17,11 +17,38 @@
       <a class="mainNav-item" href="/mercados.html">MERCADOS</a>
       <a class="mainNav-item" href="/servicios.html">SERVICIOS</a>
       <a class="mainNav-item" href="/cotiza.html">COTIZA</a>
-      <a class="mainNav-item" href="/contacto.html">CONTACTO</a>
+      <a class="mainNav-item active" href="/contacto.html">CONTACTO</a>
     </nav>
     
     <a class="btn__lang" href="#">ESPAÑOL</a>
   </header>
+
+  <header class="sectionHeader headerContacto">
+    <h1 class="sectionHeader-title">Hablemos<br>con números.</h1>
+  </header>
+
+  <section class="content">
+    <div class="content-info">
+      <h2 class="title__small">Cotiza ahora mismo</h2>
+      <p class="subtitle">Selecciona el tipo de servicio que requieres y envíanos un mensaje, en breve nos comunicaremos contigo.</p>
+    </div>
+
+    <div class="formContainer">
+      <form class="form">
+        <input name="name" type="text" placeholder="Nombre y Apellido*" required>
+        <input name="mail" type="mail" placeholder="eMail" required>
+        <input name="company" type="text" placeholder="Empresa*" required>
+        <select name="service" id="">
+          <option value="">Selecciona el tipo de servicio*</option>
+          <option value="">Servicio 1</option>
+          <option value="">Servicio 2</option>
+          <option value="">Servicio 3</option>
+        </select>
+        <textarea name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+        <input class="btn__send" type="submit" name="send" value="ENVIAR">
+      </form>
+    </div>
+  </section>
 
   <footer>
     <div class="footerLinks">

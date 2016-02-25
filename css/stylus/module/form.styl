@@ -1,0 +1,24 @@
+.formContainer
+  lost-column 5/12 0 no-flex
+  
+  & input:not([type=submit])
+  & textarea
+  & select
+    display block
+    padding .5rem
+    width 100%
+    border 1px solid $lightGrey
+    margin-bottom 1.25rem
+    border-radius .5rem
+    appearance none
+    background transparent
+    color $grey
+    
+    &::placeholder
+      color $grey
+  
+  & select
+    background url('/img/select-arrow.png') right 1rem center no-repeat
+    
+  & input
+    background-color color

@@ -428,7 +428,8 @@ body {
   background-size: cover;
 }
 .btn,
-.btn__lang {
+.btn__lang,
+.btn__send {
   display: inline-block;
   margin: 0;
   text-align: center;
@@ -439,9 +440,14 @@ body {
   border-radius: 50px;
   color: #fff;
 }
-.btn__lang {
+.btn__lang,
+.btn__send {
   background-color: #1bb1e7;
   color: #fff;
+}
+.btn__send {
+  font-size: 1rem;
+  padding: 0.25rem 1.5rem;
 }
 .mainLogo {
   display: inline-block;
@@ -576,7 +582,6 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ff6347;
   color: #fff;
 }
 @media only screen and (max-width: 1200px) {
@@ -599,6 +604,10 @@ body {
 }
 .headerServicios {
   background: url("/img/header-servicios.jpg") center no-repeat;
+  background-size: cover;
+}
+.headerContacto {
+  background: url("/img/header-contacto.jpg") center no-repeat;
   background-size: cover;
 }
 .content:after {
@@ -651,6 +660,67 @@ body {
 }
 .content-image:nth-child(0n + 1) {
   clear: left;
+}
+.formContainer {
+  width: calc(99.99% * 5/12 - (16px - 16px * 5/12));
+}
+.formContainer:nth-child(1n) {
+  float: left;
+  margin-right: 16px;
+  clear: none;
+}
+.formContainer:last-child {
+  margin-right: 0;
+}
+.formContainer:nth-child(0n) {
+  float: right;
+}
+.formContainer:nth-child(0n) {
+  margin-right: 0;
+}
+.formContainer:nth-child(0n + 1) {
+  clear: left;
+}
+.formContainer input:not([type=submit]),
+.formContainer textarea,
+.formContainer select {
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #949494;
+  margin-bottom: 1.25rem;
+  border-radius: 0.5rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  color: #404041;
+}
+.formContainer input:not([type=submit])::-webkit-input-placeholder,
+.formContainer textarea::-webkit-input-placeholder,
+.formContainer select::-webkit-input-placeholder {
+  color: #404041;
+}
+.formContainer input:not([type=submit])::-moz-placeholder,
+.formContainer textarea::-moz-placeholder,
+.formContainer select::-moz-placeholder {
+  color: #404041;
+}
+.formContainer input:not([type=submit]):-ms-input-placeholder,
+.formContainer textarea:-ms-input-placeholder,
+.formContainer select:-ms-input-placeholder {
+  color: #404041;
+}
+.formContainer input:not([type=submit])::placeholder,
+.formContainer textarea::placeholder,
+.formContainer select::placeholder {
+  color: #404041;
+}
+.formContainer select {
+  background: url("/img/select-arrow.png") right 1rem center no-repeat;
+}
+.formContainer input {
+  background-color: color;
 }
 footer {
   padding-top: 3rem;
