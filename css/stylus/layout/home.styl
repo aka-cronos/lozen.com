@@ -1,10 +1,16 @@
 .homeAbout
   display flex
   
+  +below($tablet)
+    flex-direction column
+
   &-info
   &-image
     padding 6rem 4rem
     width 50%
+    
+    +below($tablet)
+      width 100%
     
   &-info
     text-align center
@@ -22,6 +28,9 @@
   clear fix
   padding-top 4rem
   padding-bottom 4rem
+  
+  +below($desktop)
+    wrapped(90%)
   
   & .title
     margin-bottom 4rem
@@ -44,6 +53,9 @@
   & img
     margin-right 1rem
     width 40px
+    
+  +below($tablet)
+    lost-column 1/1
     
 .homeQuote
 .homeCareers

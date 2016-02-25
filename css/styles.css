@@ -304,10 +304,23 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media only screen and (max-width: 900px) {
+  .homeAbout {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .homeAbout-info,
 .homeAbout-image {
   padding: 6rem 4rem;
   width: 50%;
+}
+@media only screen and (max-width: 900px) {
+  .homeAbout-info,
+  .homeAbout-image {
+    width: 100%;
+  }
 }
 .homeAbout-info {
   text-align: center;
@@ -327,6 +340,12 @@ body {
   padding-right: calc(50% - (1200px / 2));
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+@media only screen and (max-width: 1200px) {
+  .homeServices {
+    padding-left: calc(50% - (90% / 2));
+    padding-right: calc(50% - (90% / 2));
+  }
 }
 .homeServices .title {
   margin-bottom: 4rem;
@@ -374,6 +393,26 @@ body {
 .services-item img {
   margin-right: 1rem;
   width: 40px;
+}
+@media only screen and (max-width: 900px) {
+  .services-item {
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: calc(99.99% * 1/1 - (16px - 16px * 1/1));
+  }
+  .services-item:nth-child(1n) {
+    margin-right: 16px;
+  }
+  .services-item:last-child {
+    margin-right: 0;
+  }
+  .services-item:nth-child(1n) {
+    float: right;
+  }
+  .services-item:nth-child(1n) {
+    margin-right: 0;
+  }
 }
 .homeQuote,
 .homeCareers {
@@ -540,6 +579,12 @@ body {
   background-color: #ff6347;
   color: #fff;
 }
+@media only screen and (max-width: 1200px) {
+  .sectionHeader {
+    padding-left: calc(50% - (90% / 2));
+    padding-right: calc(50% - (90% / 2));
+  }
+}
 .sectionHeader-title {
   font-weight: 400;
   font-size: 3rem;
@@ -608,15 +653,12 @@ body {
   clear: left;
 }
 footer {
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
   background-color: #404041;
   border-bottom: 4px solid #f15931;
   color: #949494;
   font-size: 14px;
-}
-footer *:not(input):not(textarea):not(select) {
-  background-color: rgba(0, 0, 255, 0.1);
 }
 footer > div {
   padding-left: calc(50% - (1200px / 2));
@@ -660,6 +702,10 @@ footer > div {
 }
 .direction {
   margin-bottom: 3rem;
+}
+.rights a {
+  color: #949494;
+  text-decoration: none;
 }
 .legals {
   border-top: 1px solid #949494;
