@@ -9,4 +9,12 @@ $(document).ready(function() {
       next: '<a class="unslider-arrow next"><img src="/img/arrow-right.png" alt="" /></a>'
     }
   });
+
+  $(document).ready(function() {
+    $('.mainNav-trigger').bigSlide({
+      menu: "#mainNav__mobile",
+      side: "right",
+      menuWidth: "90%"
+    });
+  });
 });

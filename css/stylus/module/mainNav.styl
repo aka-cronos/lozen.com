@@ -1,7 +1,10 @@
 .mainNav
   display flex
   align-items center
-    
+  
+  +below($desktop)
+    display none
+  
   &-item
     position relative
     padding-top 2.5rem
@@ -25,3 +28,34 @@
     &:hover:before
     &.active:before
       top 0
+      
+.btn__lang
+  +below($desktop)
+    display none
+    
+.mainNav-trigger
+  color $blue
+  text-decoration none
+  font-size 2.5rem
+  line-height 1
+  display none
+  
+  +below($desktop)
+    display block
+  
+.mainNav__mobile
+  shadow()
+  position fixed
+  right 90%
+  padding-top 99px
+  width 90%
+  background-color white
+  text-align center
+  
+  &-item
+    padding-top 1.5rem
+    padding-bottom 1.5rem
+    text-decoration none
+    border-bottom 1px solid $lightBlue
+    color $grey
+    display block

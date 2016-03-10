@@ -16,11 +16,12 @@
       <a class="mainNav-item" href="/somos.html">SOMOS</a>
       <a class="mainNav-item" href="/mercados.html">MERCADOS</a>
       <a class="mainNav-item" href="/servicios.html">SERVICIOS</a>
-      <a class="mainNav-item active" href="/cotiza.html">COTIZA</a>
+      <a class="mainNav-item" href="/cotiza.html">COTIZA</a>
       <a class="mainNav-item" href="/contacto.html">CONTACTO</a>
     </nav>
-    
     <a class="btn__lang" href="#">ESPAÑOL</a>
+
+    <a href="#mainNav__mobile" class="mainNav-trigger">&#9776;</a>
   </header>
 
   <header class="sectionHeader headerContacto">
@@ -85,5 +86,27 @@
       <p class="tagline">Right in Time. Right in Place™</p>
     </div>
   </footer>
+
+  <nav id="mainNav__mobile" class="mainNav__mobile" role="navigation">
+    <a class="mainNav__mobile-item" href="/">HOME</a>
+    <a class="mainNav__mobile-item" href="/somos.html">SOMOS</a>
+    <a class="mainNav__mobile-item" href="/mercados.html">MERCADOS</a>
+    <a class="mainNav__mobile-item" href="/servicios.html">SERVICIOS</a>
+    <a class="mainNav__mobile-item" href="/cotiza.html">COTIZA</a>
+    <a class="mainNav__mobile-item" href="/contacto.html">CONTACTO</a>
+    <a class="mainNav__mobile-item" href="#">ESPAÑOL</a>
+  </nav>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="/scripts/minjs/bigslide.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.mainNav-trigger').bigSlide({
+        menu: "#mainNav__mobile",
+        side: "right",
+        menuWidth: "90%"
+      });
+    });
+  </script>
 </body>
 </html>

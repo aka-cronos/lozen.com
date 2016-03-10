@@ -2,6 +2,9 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="Lozen :D">
   <title>Lozen.com</title>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
@@ -19,8 +22,9 @@
       <a class="mainNav-item" href="/cotiza.html">COTIZA</a>
       <a class="mainNav-item" href="/contacto.html">CONTACTO</a>
     </nav>
-    
     <a class="btn__lang" href="#">ESPAÑOL</a>
+
+    <a href="#mainNav__mobile" class="mainNav-trigger">&#9776;</a>
   </header>
 
   <section class="mainSlider">
@@ -168,8 +172,37 @@
     </div>
   </footer>
 
+  <nav id="mainNav__mobile" class="mainNav__mobile" role="navigation">
+    <a class="mainNav__mobile-item" href="/somos.html">SOMOS</a>
+    <a class="mainNav__mobile-item" href="/mercados.html">MERCADOS</a>
+    <a class="mainNav__mobile-item" href="/servicios.html">SERVICIOS</a>
+    <a class="mainNav__mobile-item" href="/cotiza.html">COTIZA</a>
+    <a class="mainNav__mobile-item" href="/contacto.html">CONTACTO</a>
+    <a class="mainNav__mobile-item" href="#">ESPAÑOL</a>
+  </nav>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="/scripts/minjs/unslider.js"></script>
-  <script src="/scripts/minjs/main.js"></script>
+  <script src="/scripts/minjs/bigslide.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.slider').unslider({
+        autoplay: true,
+        delay: 6000,
+        infinite: true,
+        nav: false,
+        arrows: {
+          prev: '<a class="unslider-arrow prev"><img src="/img/arrow-left.png" alt="" /></a>',
+          next: '<a class="unslider-arrow next"><img src="/img/arrow-right.png" alt="" /></a>'
+        }
+      });
+
+      $('.mainNav-trigger').bigSlide({
+        menu: "#mainNav__mobile",
+        side: "right",
+        menuWidth: "90%"
+      });
+    });
+  </script>
 </body>
 </html>
