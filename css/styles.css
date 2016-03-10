@@ -393,6 +393,11 @@ body {
 .services-item img {
   margin-right: 1rem;
   width: 40px;
+  transition: 300ms all ease-in-out;
+}
+.services-item:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 @media only screen and (max-width: 900px) {
   .services-item {
