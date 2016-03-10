@@ -577,12 +577,17 @@ body {
   text-align: center;
 }
 .mainNav__mobile-item {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-decoration: none;
   border-bottom: 1px solid #1bb1e7;
   color: #404041;
   display: block;
+}
+.mainNav__mobile-item.active {
+  color: #fff;
+  background-color: #025595;
+  border: 0;
 }
 .mainSlider,
 .slide {
@@ -962,11 +967,15 @@ footer > div {
   margin-right: 1.5rem;
   color: #949494;
   text-decoration: none;
+  transition: 300ms all ease-in-out;
 }
 @media only screen and (max-width: 1200px) {
   .footerNav-item {
     display: block;
-    margin-bottom: 1rem;
     margin-right: 0;
+    margin-bottom: 1rem;
   }
+}
+.footerNav-item:hover {
+  color: #fff;
 }
