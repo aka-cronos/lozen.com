@@ -573,6 +573,7 @@ body {
   right: 90%;
   padding-top: 99px;
   width: 90%;
+  height: 100vh;
   background-color: #fff;
   text-align: center;
 }
@@ -588,6 +589,9 @@ body {
   color: #fff;
   background-color: #025595;
   border: 0;
+}
+.wrap {
+  position: relative;
 }
 .mainSlider,
 .slide {
