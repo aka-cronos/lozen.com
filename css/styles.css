@@ -582,7 +582,7 @@ body {
 .mainNav__mobile {
   box-shadow: 0 10px 20px 0 rgba(0,0,0,0.1);
   position: fixed;
-  right: 90%;
+  right: -90%;
   padding-top: 99px;
   width: 90%;
   height: 100vh;
