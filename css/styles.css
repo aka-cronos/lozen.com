@@ -362,7 +362,7 @@ body {
   list-style: none;
 }
 .services-item {
-  width: calc(99.99% * 1/4 - (16px - 16px * 1/4));
+  width: calc(99.99% * 1/4 - (20px - 20px * 1/4));
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -375,7 +375,7 @@ body {
 }
 .services-item:nth-child(1n) {
   float: left;
-  margin-right: 16px;
+  margin-right: 20px;
   clear: none;
 }
 .services-item:last-child {
@@ -399,10 +399,10 @@ body {
     -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    width: calc(99.99% * 1/1 - (16px - 16px * 1/1));
+    width: calc(99.99% * 1/1 - (20px - 20px * 1/1));
   }
   .services-item:nth-child(1n) {
-    margin-right: 16px;
+    margin-right: 20px;
   }
   .services-item:last-child {
     margin-right: 0;
@@ -706,11 +706,11 @@ body {
   }
 }
 .content-info {
-  width: calc(99.99% * 7/12 - (16px - 16px * 7/12));
+  width: calc(99.99% * 7/12 - (20px - 20px * 7/12));
 }
 .content-info:nth-child(1n) {
   float: left;
-  margin-right: 16px;
+  margin-right: 20px;
   clear: none;
 }
 .content-info:last-child {
@@ -726,12 +726,12 @@ body {
   clear: left;
 }
 .content-image {
-  width: calc(99.99% * 5/12 - (16px - 16px * 5/12));
+  width: calc(99.99% * 5/12 - (20px - 20px * 5/12));
   overflow: hidden;
 }
 .content-image:nth-child(1n) {
   float: left;
-  margin-right: 16px;
+  margin-right: 20px;
   clear: none;
 }
 .content-image:last-child {
@@ -752,20 +752,20 @@ body {
   transition: 350ms all ease-in-out;
 }
 .content-image img:hover {
-  -webkit-transform: scale(1.1) rotate(3deg);
-          transform: scale(1.1) rotate(3deg);
+  -webkit-transform: scale(1.1) i;
+          transform: scale(1.1) i;
 }
 @media only screen and (max-width: 1200px) {
   .content-info,
   .content-image,
   .content .formContainer {
-    width: calc(99.99% * 1/1 - (16px - 16px * 1/1));
+    width: calc(99.99% * 1/1 - (20px - 20px * 1/1));
   }
   .content-info:nth-child(1n),
   .content-image:nth-child(1n),
   .content .formContainer:nth-child(1n) {
     float: left;
-    margin-right: 16px;
+    margin-right: 20px;
     clear: none;
   }
   .content-info:last-child,
@@ -790,11 +790,11 @@ body {
   }
 }
 .formContainer {
-  width: calc(99.99% * 5/12 - (16px - 16px * 5/12));
+  width: calc(99.99% * 5/12 - (20px - 20px * 5/12));
 }
 .formContainer:nth-child(1n) {
   float: left;
-  margin-right: 16px;
+  margin-right: 20px;
   clear: none;
 }
 .formContainer:last-child {
@@ -924,16 +924,16 @@ footer > div {
   .rights,
   .tagline,
   .direction {
-    margin-left: calc(99.99% * (-2/12 * -1) - (16px - 16px * (-2/12 * -1)) + 16px) !important;
+    margin-left: calc(99.99% * (-2/12 * -1) - (20px - 20px * (-2/12 * -1)) + 20px) !important;
   }
   .rights {
     -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    width: calc(99.99% * 5/12 - (16px - 16px * 5/12));
+    width: calc(99.99% * 5/12 - (20px - 20px * 5/12));
   }
   .rights:nth-child(1n) {
-    margin-right: 16px;
+    margin-right: 20px;
   }
   .rights:last-child {
     margin-right: 0;
@@ -948,10 +948,10 @@ footer > div {
     -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    width: calc(99.99% * 3/12 - (16px - 16px * 3/12));
+    width: calc(99.99% * 3/12 - (20px - 20px * 3/12));
   }
   .tagline:nth-child(1n) {
-    margin-right: 16px;
+    margin-right: 20px;
   }
   .tagline:last-child {
     margin-right: 0;
@@ -968,12 +968,12 @@ footer > div {
     -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    width: calc(99.99% * 6/12 - (16px - 16px * 6/12));
-    margin-left: calc(99.99% * (-1/12 * -1) - (16px - 16px * (-1/12 * -1)) + 16px) !important;
-    margin-right: calc(99.99% * 1/12 - (16px - 16px * 1/12) + (16px * 2)) !important;
+    width: calc(99.99% * 6/12 - (20px - 20px * 6/12));
+    margin-left: calc(99.99% * (-1/12 * -1) - (20px - 20px * (-1/12 * -1)) + 20px) !important;
+    margin-right: calc(99.99% * 1/12 - (20px - 20px * 1/12) + (20px * 2)) !important;
   }
   .footerNav:nth-child(1n) {
-    margin-right: 16px;
+    margin-right: 20px;
   }
   .footerNav:last-child {
     margin-right: 0;
