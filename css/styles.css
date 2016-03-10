@@ -462,19 +462,25 @@ body {
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: calc(99.99% * 1/12 - (16px - 16px * 1/12));
+  width: calc(99.999999% * 1/12);
 }
 .footerLogo:nth-child(1n) {
-  margin-right: 16px;
+  margin-right: 0;
 }
 .footerLogo:last-child {
   margin-right: 0;
 }
-.footerLogo:nth-child(12n) {
+.footerLogo:nth-child(0n) {
   float: right;
 }
-.footerLogo:nth-child(12n) {
+.footerLogo:nth-child(0n) {
   margin-right: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .footerLogo {
+    margin-bottom: 2rem;
+    width: auto;
+  }
 }
 .footerLogo img {
   display: block;
@@ -550,11 +556,11 @@ body {
   }
 }
 .mainNav-trigger {
+  display: none;
   color: #025595;
   text-decoration: none;
   font-size: 2.5rem;
   line-height: 1;
-  display: none;
 }
 @media only screen and (max-width: 1200px) {
   .mainNav-trigger {
@@ -633,7 +639,17 @@ body {
 }
 .sectionHeader-title {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: calc(2.5rem + 0.5 * ((100vw - 26.25rem) / 53.75));
+}
+@media screen and (min-width: 1280px) {
+  .sectionHeader-title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .sectionHeader-title {
+    font-size: 2.5rem;
+  }
 }
 .headerSomos {
   background: url("/img/header-somos.jpg") center no-repeat;
@@ -661,6 +677,12 @@ body {
   padding-right: calc(50% - (1200px / 2));
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+@media only screen and (max-width: 1200px) {
+  .content {
+    padding-left: calc(50% - (90% / 2));
+    padding-right: calc(50% - (90% / 2));
+  }
 }
 .content-info {
   width: calc(99.99% * 7/12 - (16px - 16px * 7/12));
@@ -701,6 +723,44 @@ body {
 }
 .content-image:nth-child(0n + 1) {
   clear: left;
+}
+.content-image img {
+  display: block;
+  width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .content-info,
+  .content-image,
+  .content .formContainer {
+    width: calc(99.99% * 1/1 - (16px - 16px * 1/1));
+  }
+  .content-info:nth-child(1n),
+  .content-image:nth-child(1n),
+  .content .formContainer:nth-child(1n) {
+    float: left;
+    margin-right: 16px;
+    clear: none;
+  }
+  .content-info:last-child,
+  .content-image:last-child,
+  .content .formContainer:last-child {
+    margin-right: 0;
+  }
+  .content-info:nth-child(0n),
+  .content-image:nth-child(0n),
+  .content .formContainer:nth-child(0n) {
+    float: right;
+  }
+  .content-info:nth-child(0n),
+  .content-image:nth-child(0n),
+  .content .formContainer:nth-child(0n) {
+    margin-right: 0;
+  }
+  .content-info:nth-child(0n + 1),
+  .content-image:nth-child(0n + 1),
+  .content .formContainer:nth-child(0n + 1) {
+    clear: left;
+  }
 }
 .formContainer {
   width: calc(99.99% * 5/12 - (16px - 16px * 5/12));
@@ -876,28 +936,37 @@ footer > div {
     margin-right: 0;
   }
 }
-.footerNav {
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  width: calc(99.99% * 6/12 - (16px - 16px * 6/12));
-  margin-left: calc(99.99% * (-1/12 * -1) - (16px - 16px * (-1/12 * -1)) + 16px) !important;
-  margin-right: calc(99.99% * 1/12 - (16px - 16px * 1/12) + (16px * 2)) !important;
-}
-.footerNav:nth-child(1n) {
-  margin-right: 16px;
-}
-.footerNav:last-child {
-  margin-right: 0;
-}
-.footerNav:nth-child(12n) {
-  float: right;
-}
-.footerNav:nth-child(12n) {
-  margin-right: 0;
+@media only screen and (min-width: 1200px) {
+  .footerNav {
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: calc(99.99% * 6/12 - (16px - 16px * 6/12));
+    margin-left: calc(99.99% * (-1/12 * -1) - (16px - 16px * (-1/12 * -1)) + 16px) !important;
+    margin-right: calc(99.99% * 1/12 - (16px - 16px * 1/12) + (16px * 2)) !important;
+  }
+  .footerNav:nth-child(1n) {
+    margin-right: 16px;
+  }
+  .footerNav:last-child {
+    margin-right: 0;
+  }
+  .footerNav:nth-child(12n) {
+    float: right;
+  }
+  .footerNav:nth-child(12n) {
+    margin-right: 0;
+  }
 }
 .footerNav-item {
   margin-right: 1.5rem;
   color: #949494;
   text-decoration: none;
+}
+@media only screen and (max-width: 1200px) {
+  .footerNav-item {
+    display: block;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
 }

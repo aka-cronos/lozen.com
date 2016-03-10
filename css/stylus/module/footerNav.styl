@@ -1,9 +1,15 @@
 .footerNav
-  lost-column 6/12 flex
-  lost-offset -1/12 flex
-  lost-offset 1/12 flex
+  +above($desktop)
+    lost-column 6/12 flex
+    lost-offset -1/12 flex
+    lost-offset 1/12 flex
 
   &-item
     margin-right 1.5rem
     color $lightGrey
     text-decoration none
+    
+    +below($desktop)
+      display block
+      margin-bottom 1rem
+      margin-right 0

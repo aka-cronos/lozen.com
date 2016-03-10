@@ -8,7 +8,11 @@
     width 100%
     
 .footerLogo
-  lost-column 1/12 flex
+  lost-column 1/12 0 0 flex
+  
+  +below($desktop)
+    margin-bottom 2rem
+    width auto
   
   img
     display block

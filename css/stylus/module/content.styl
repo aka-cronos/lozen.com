@@ -4,8 +4,21 @@
   padding-top 6rem
   padding-bottom 6rem
   
+  +below($desktop)
+    wrapped(90%)
+  
   &-info
     lost-column 7/12 0 no-flex
     
   &-image
     lost-column 5/12 0 no-flex
+    
+    img
+      display block
+      width 100%
+    
+  &-info
+  &-image
+  .formContainer
+    +below($desktop)
+      lost-column 1/1 0 no-flex
