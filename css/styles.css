@@ -752,8 +752,8 @@ body {
   transition: 350ms all ease-in-out;
 }
 .content-image img:hover {
-  -webkit-transform: scale(1.1) i;
-          transform: scale(1.1) i;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 @media only screen and (max-width: 1200px) {
   .content-info,
