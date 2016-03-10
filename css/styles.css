@@ -439,11 +439,23 @@ body {
   border: 1px solid #fff;
   border-radius: 50px;
   color: #fff;
+  transition: 300ms all ease-in-out;
+}
+.btn:hover,
+.btn__lang:hover,
+.btn__send:hover {
+  background-color: #fff;
+  color: #025595;
 }
 .btn__lang,
 .btn__send {
   background-color: #1bb1e7;
   color: #fff;
+}
+.btn__lang:hover,
+.btn__send:hover {
+  color: #fff;
+  background-color: #025595;
 }
 .btn__send {
   font-size: 1rem;
@@ -715,6 +727,7 @@ body {
 }
 .content-image {
   width: calc(99.99% * 5/12 - (16px - 16px * 5/12));
+  overflow: hidden;
 }
 .content-image:nth-child(1n) {
   float: left;
@@ -736,6 +749,11 @@ body {
 .content-image img {
   display: block;
   width: 100%;
+  transition: 350ms all ease-in-out;
+}
+.content-image img:hover {
+  -webkit-transform: scale(1.1) rotate(3deg);
+          transform: scale(1.1) rotate(3deg);
 }
 @media only screen and (max-width: 1200px) {
   .content-info,

@@ -9,12 +9,23 @@ $btn
   border 1px solid white
   border-radius 50px
   color white
+  transition 300ms all ease-in-out
+  
+  &:hover
+    background-color white
+    color $blue
 
 .btn__lang
 .btn__send
   @extend $btn
   background-color $lightBlue
   color white
+  
+.btn__lang
+.btn__send
+  &:hover
+    color white
+    background-color $blue
 
 .btn__send
   font-size 1rem
