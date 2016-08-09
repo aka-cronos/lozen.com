@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,40 +12,60 @@
 <body>
 
   <header class="mainHeader">    
-    <a href="/" class="mainLogo">
+    <a href="/eng/" class="mainLogo">
       <img src="/img/mainLogo.png" alt="">
     </a>
     
-    <nav class="mainNav">      
-      <a class="mainNav-item active" href="/somos.html">SOMOS</a>
-      <a class="mainNav-item" href="/mercados.html">MERCADOS</a>
-      <a class="mainNav-item" href="/servicios.html">SERVICIOS</a>
-      <a class="mainNav-item" href="/equipo.html">EQUIPO</a>
-      <a class="mainNav-item" href="/cotiza.html">COTIZA</a>
-      <a class="mainNav-item" href="/contacto.html">CONTACTO</a>
+    <nav class="mainNav">
+      <a class="mainNav-item" href="/eng/about.html">ABOUT</a>
+      <a class="mainNav-item" href="/eng/markets.html">MARKETS</a>
+      <a class="mainNav-item" href="/eng/services.html">SERVICES</a>
+      <a class="mainNav-item" href="/eng/careers.html">CAREERS</a>
+      <a class="mainNav-item active" href="/eng/quote.html">QUOTE</a>
+      <a class="mainNav-item" href="/eng/contact.html">CONTACT</a>
     </nav>
     
-    <a class="btn__lang" href="about.html">ENGLISH</a>
+    <a class="btn__lang" href="cotiza.html">ESPAÑOL</a>
 
     <a href="#mainNav__mobile" class="mainNav-trigger">&#9776;</a>
   </header>
 
-  <header class="sectionHeader headerSomos wrap push">
-    <h1 class="sectionHeader-title">Servicio personal <br> y eficiente.</h1>
+  <header class="sectionHeader headerContacto wrap push">
+    <h1 class="sectionHeader-title">Hablemos<br>con números.</h1>
   </header>
 
   <section class="content wrap push">
     <div class="content-info">
-      <h2 class="title__small">ACERCA DE NOSOTROS</h2>
-      <p class="subtitle">En Lozen proporcionamos servicios personalizados de logística internacional para que nuestros clientes tengan la confianza de recibir su mercancía en tiempo y forma.</p>
-      <p class="text">Nuestra probada velocidad de respuesta con personal 24/7 nos permite resolver las diversas contingencias que se presentan en un trabajo donde se involcra a cientos de personas ubicadas en distintos lugares del planeta, dando una respuesta positiva a nuestros clientes.</p>
-      <p class="text">Para garantizar nuestros servicios, basamos el trabajo en seis valores que son fundamentales en Lozen y que a la fecha han servido para asegurar la calidad que nos distingue: <strong>Actitud de Servicio, Confiabilidad, El cliente es primero, Trabajo en equipo, Mejora continua, Espíritu de lucha.</strong></p>
+      <h2 class="title__small">Cotiza ahora mismo</h2>
+      <p class="subtitle">Selecciona el tipo de servicio que requieres y envíanos un mensaje, en breve nos comunicaremos contigo.</p>
     </div>
-    <div class="content-image">
-      <img src="/img/somos.jpg" alt="">
+
+    <div class="formContainer">
+      <form class="form">
+        <input name="company" type="text" placeholder="Empresa*" required>
+        <input name="name" type="text" placeholder="Nombre de contacto*" required>
+        <input name="phone" type="text" placeholder="Teléfono (10 dígitos)*" required>
+        <input name="mail" type="mail" placeholder="Correo electrónico" required>
+        <select name="service" id="">
+          <option value="">Tipo de servicio*</option>
+          <option value="">Áereo</option>
+          <option value="">Marítimo</option>
+          <option value="">Terrestre</option>
+          <option value="">Cargo</option>
+        </select>
+        <select name="container" id="">
+          <option value="">Tipo de contenedor*</option>
+          <option value="">Opt 1</option>
+          <option value="">Opt 2</option>
+        </select>
+        <input name="origin" type="text" placeholder="Origen" required>
+        <input name="destiny" type="text" placeholder="Destino" required>
+        <input name="rate" type="text" placeholder="Tarifa estimada" required>
+        <textarea name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+        <input class="btn__send" type="submit" name="send" value="ENVIAR">
+      </form>
     </div>
   </section>
-
 
   <footer class="wrap push">
     <div class="footerLinks">
@@ -86,11 +106,11 @@
 
   <nav id="mainNav__mobile" class="mainNav__mobile" role="navigation">
     <a class="mainNav__mobile-item" href="/">HOME</a>
-    <a class="mainNav__mobile-item active" href="/somos.html">SOMOS</a>
+    <a class="mainNav__mobile-item" href="/somos.html">SOMOS</a>
     <a class="mainNav__mobile-item" href="/mercados.html">MERCADOS</a>
     <a class="mainNav__mobile-item" href="/servicios.html">SERVICIOS</a>
     <a class="mainNav__mobile-item" href="/equipo.html">EQUIPO</a>
-    <a class="mainNav__mobile-item" href="/cotiza.html">COTIZA</a>
+    <a class="mainNav__mobile-item active" href="/cotiza.html">COTIZA</a>
     <a class="mainNav__mobile-item" href="/contacto.html">CONTACTO</a>
     <a class="mainNav__mobile-item" href="#">ESPAÑOL</a>
   </nav>
