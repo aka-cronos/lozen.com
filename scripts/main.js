@@ -14,7 +14,7 @@ $(document).ready(function() {
     $('.mainNav-trigger').bigSlide({
       menu: "#mainNav__mobile",
       side: "right",
-      menuWidth: "90%"
+      menuWidth: "100%"
     });
   });
 });

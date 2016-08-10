@@ -12,12 +12,24 @@
     font-weight 400
   
   &-content
-    wrapped(900px)
+    wrapped()
     width 100%
     
-    + below($desktop)
+    +below($desktop)
       wrapped(80%)
 
 .slide_01
-  background url('/img/slide_01.jpg') center no-repeat
+  background url("/img/slide_01.jpg") center no-repeat
+  background-size cover
+
+.slide_02
+  background url("/img/slide_02.jpg") center no-repeat
+  background-size cover
+
+.slide_03
+  background url("/img/slide_03.jpg") center no-repeat
+  background-size cover
+
+.slide_04
+  background url("/img/slide_04.jpg") center no-repeat
   background-size cover
