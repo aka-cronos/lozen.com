@@ -28,5 +28,8 @@
     "lost": "^6.7.1",
     "rucksack-css": "^0.8.5",
     "rupture": "^0.6.1"
+  },
+  "dependencies": {
+    "debug-log": "^1.0.0"
   }
 }
