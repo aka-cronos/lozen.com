@@ -7,6 +7,10 @@
   <meta name="description" content="Lozen :D">
   <title>Lozen.com</title>
   <link rel="stylesheet" href="/css/styles.css">
+  <script src="../js/functions.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../js/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="../js/jquery.modal.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -45,13 +49,16 @@
     <div class="formContainer">
       <p class="text">
       All fields marked with (*) are required.</p>
-      <form class="form">
-        <input name="name" type="text" placeholder="Full Name*" required>
-        <input name="mail" type="mail" placeholder="eMail" required>
-        <input name="company" type="text" placeholder="Company*" required>
-        <textarea name="message" cols="30" rows="5" placeholder="Message"></textarea>
+      <form class="form" id="form" onsubmit="doSendContactMsg('contact','en'); return false;" enctype="multipart/form-data" method="POST">
+        <input type="hidden" id="frmType" value="contact">
+        <input name="name" type="text" placeholder="Full Name*" required id="frmName">
+        <input name="mail" type="mail" placeholder="eMail" required id="frmEmail">
+        <input name="company" type="text" placeholder="Company*" required id="frmCompany">
+        <textarea name="message" cols="30" rows="5" placeholder="Message" id="frmMessage"></textarea>
         <input class="btn__send" type="submit" name="send" value="SEND">
       </form>
+      <div id="modalWindow" style="display:none;"> <center> <span id="modalText"></span> </center> </div>
+      <a id="openModal" href="#modalWindow" rel="modal:open" style="display:none;"></a>
     </div>
   </section>
 
