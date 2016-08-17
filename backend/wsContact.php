@@ -22,8 +22,8 @@ if ( $_POST['formData']['formType'] ) // Todo: Add AntiSpam Validation
 		case 'quote':
 			$emailTemplate = 'Throught the quote form,' . $_POST['formData']['formName'] . ' has tried to contact you. <br><br> Here is the information: <br><br>'.
 					' Full Name : ' . $_POST['formData']['formName']        . '<br>'.
-                    ' Email: '      . $_POST['formData']['formEmail']       . '<br>'.
-                    ' Company: '    . $_POST['formData']['formCompany']     . '<br>'.
+          ' Email: '      . $_POST['formData']['formEmail']       . '<br>'.
+          ' Company: '    . $_POST['formData']['formCompany']     . '<br>'.
 					' Phone: '    	. $_POST['formData']['formPhone']     	. '<br>'.
 					' Service: '    . $_POST['formData']['formService']     . '<br>'.
 					' Container: '  . $_POST['formData']['formContainer']   . '<br>'.

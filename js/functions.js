@@ -8,37 +8,37 @@ function doSendContactMsg(type, lang)
 	{
 		case 'quote':
 			var formData = {
-				formType		:	'quote',
-				formCompany		: 	$('#frmCompany').val(),
-				formName 		: 	$('#frmName').val(),
-				formPhone 		: 	$('#frmPhone').val(),
-				formEmail		:	$('#frmEmail').val(),
-				formService 	: 	$('#frmService').val(),
-				formContainer 	: 	$('#frmContainer').val(),
-				formOrigin 		: 	$('#frmOrigin').val(),
-				formDestiny 	: 	$('#frmDestiny').val(),
-				formEstimateFare: 	$('#frmEstimateRate').val(),
-				formMessage 	: 	$('#frmMessage').val()
+				formType						: 'quote',
+				formCompany					: $('#frmCompany').val(),
+				formName						: $('#frmName').val(),
+				formPhone						: $('#frmPhone').val(),
+				formEmail						: $('#frmEmail').val(),
+				formService					: $('#frmService').val(),
+				formContainer				: $('#frmContainer').val(),
+				formOrigin					: $('#frmOrigin').val(),
+				formDestiny					: $('#frmDestiny').val(),
+				formEstimateFare		: $('#frmEstimateRate').val(),
+				formMessage					: $('#frmMessage').val()
 			};
 			break;
 
 		case 'contact':
 			var formData = {
-				formType	:	'contact',
-				formName	: 	$('#frmName').val(),
-				formEmail 	: 	$('#frmEmail').val(),
-				formCompany	:	$('#frmCompany').val(),
-				formMessage	:	$('#frmMessage').val()
+				formType						: 'contact',
+				formName						: $('#frmName').val(),
+				formEmail						: $('#frmEmail').val(),
+				formCompany					: $('#frmCompany').val(),
+				formMessage					: $('#frmMessage').val()
 			};
 			break;
 
 		case 'team':
 			var formData = {
-				formType	:	'team',
-				formName	: 	$('#frmName').val(),
-				formEmail 	: 	$('#frmEmail').val(),
-				formCompany	:	$('#frmCompany').val(),
-				formMessage	:	$('#frmMessage').val()
+				formType						: 'team',
+				formName						: $('#frmName').val(),
+				formEmail						: $('#frmEmail').val(),
+				formCompany					:	$('#frmCompany').val(),
+				formMessage					:	$('#frmMessage').val()
 			};
 			break;
 	}
