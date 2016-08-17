@@ -7,6 +7,10 @@
   <meta name="description" content="Lozen :D">
   <title>Lozen.com</title>
   <link rel="stylesheet" href="/css/styles.css">
+  <script src="js/functions.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="js/jquery.modal.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -41,29 +45,32 @@
     </div>
 
     <div class="formContainer">
-      <form class="form">
-        <input name="company" type="text" placeholder="Empresa*" required>
-        <input name="name" type="text" placeholder="Nombre de contacto*" required>
-        <input name="phone" type="text" placeholder="Teléfono (10 dígitos)*" required>
-        <input name="mail" type="mail" placeholder="Correo electrónico" required>
-        <select name="service" id="">
+      <form class="form" id="form" onsubmit="doSendContactMsg('quote','sp'); return false;" enctype="multipart/form-data" method="POST">
+        <input type="hidden" id="frmType" value="quote">
+        <input name="company" type="text" placeholder="Empresa*" required id="frmCompany">
+        <input name="name" type="text" placeholder="Nombre de contacto*" required id="frmName">
+        <input name="phone" type="text" placeholder="Teléfono (10 dígitos)*" required id="frmPhone">
+        <input name="mail" type="mail" placeholder="Correo electrónico" required id="frmEmail">
+        <select name="service" id="frmService">
           <option value="">Tipo de servicio*</option>
-          <option value="">Áereo</option>
-          <option value="">Marítimo</option>
-          <option value="">Terrestre</option>
-          <option value="">Cargo</option>
+          <option value="Aereo">Áereo</option>
+          <option value="Maritino">Marítimo</option>
+          <option value="Terrestre">Terrestre</option>
+          <option value="Cargo">Cargo</option>
         </select>
-        <select name="container" id="">
+        <select name="container" id="frmContainer">
           <option value="">Tipo de contenedor*</option>
-          <option value="">Opt 1</option>
-          <option value="">Opt 2</option>
+          <option value="20ft">20'</option>
+          <option value="40ft">40'</option>
         </select>
-        <input name="origin" type="text" placeholder="Origen" required>
-        <input name="destiny" type="text" placeholder="Destino" required>
-        <input name="rate" type="text" placeholder="Tarifa estimada" required>
-        <textarea name="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+        <input name="origin" type="text" placeholder="Origen" required id="frmOrigin">
+        <input name="destiny" type="text" placeholder="Destino" required id="frmDestiny">
+        <input name="rate" type="text" placeholder="Tarifa estimada" required id="frmEstimateRate"> 
+        <textarea name="message" cols="30" rows="5" placeholder="Mensaje" id="frmMessage"></textarea>
         <input class="btn__send" type="submit" name="send" value="ENVIAR">
       </form>
+      <div id="modalWindow" style="display:none;"> <center> <span id="modalText"></span> </center> </div>
+      <a id="openModal" href="#modalWindow" rel="modal:open" style="display:none;"></a>
     </div>
   </section>
 
