@@ -359,7 +359,7 @@ body {
   list-style: none;
 }
 .services-item {
-  width: calc(99.99% * 1/4 - (20px - 20px * 1/4));
+  width: calc(99.9% * 1/4 - (20px - 20px * 1/4));
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2.5rem;
@@ -381,7 +381,7 @@ body {
   float: right;
 }
 .services-item:nth-child(4n + 1) {
-  clear: left;
+  clear: both;
 }
 .services-item img {
   margin-right: 1rem;
@@ -395,7 +395,7 @@ body {
   .services-item {
     -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-    width: calc(99.99% * 1/1 - (20px - 20px * 1/1));
+    width: calc(99.9% * 1/1 - (20px - 20px * 1/1));
   }
   .services-item:nth-child(1n) {
     margin-right: 20px;
@@ -468,7 +468,7 @@ body {
 .footerLogo {
   -ms-flex: 0 0 auto;
       flex: 0 0 auto;
-  width: calc(99.999999% * 1/12);
+  width: calc(99.9% * 1/12);
 }
 .footerLogo:nth-child(1n) {
   margin-right: 0;
@@ -710,7 +710,7 @@ body {
   }
 }
 .content-info {
-  width: calc(99.99% * 7/12 - (20px - 20px * 7/12));
+  width: calc(99.9% * 7/12 - (20px - 20px * 7/12));
 }
 .content-info:nth-child(1n) {
   float: left;
@@ -725,10 +725,10 @@ body {
   float: right;
 }
 .content-info:nth-child(0n + 1) {
-  clear: left;
+  clear: both;
 }
 .content-image {
-  width: calc(99.99% * 5/12 - (20px - 20px * 5/12));
+  width: calc(99.9% * 5/12 - (20px - 20px * 5/12));
   overflow: hidden;
 }
 .content-image:nth-child(1n) {
@@ -744,7 +744,7 @@ body {
   float: right;
 }
 .content-image:nth-child(0n + 1) {
-  clear: left;
+  clear: both;
 }
 .content-image img {
   display: block;
@@ -758,7 +758,7 @@ body {
   .content-info,
   .content-image,
   .content .formContainer {
-    width: calc(99.99% * 1/1 - (20px - 20px * 1/1));
+    width: calc(99.9% * 1/1 - (20px - 20px * 1/1));
   }
   .content-info:nth-child(1n),
   .content-image:nth-child(1n),
@@ -781,11 +781,11 @@ body {
   .content-info:nth-child(0n + 1),
   .content-image:nth-child(0n + 1),
   .content .formContainer:nth-child(0n + 1) {
-    clear: left;
+    clear: both;
   }
 }
 .formContainer {
-  width: calc(99.99% * 5/12 - (20px - 20px * 5/12));
+  width: calc(99.9% * 5/12 - (20px - 20px * 5/12));
 }
 .formContainer:nth-child(1n) {
   float: left;
@@ -800,7 +800,7 @@ body {
   float: right;
 }
 .formContainer:nth-child(0n + 1) {
-  clear: left;
+  clear: both;
 }
 .formContainer input:not([type=submit]),
 .formContainer textarea,
@@ -912,12 +912,12 @@ footer > div {
   .rights,
   .tagline,
   .direction {
-    margin-left: calc(99.99% * (-2/12 * -1) - (20px - 20px * (-2/12 * -1)) + 20px) !important;
+    margin-left: calc(99.9% * (-2/12 * -1) - (20px - 20px * (-2/12 * -1)) + 20px) !important;
   }
   .rights {
     -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-    width: calc(99.99% * 5/12 - (20px - 20px * 5/12));
+    width: calc(99.9% * 5/12 - (20px - 20px * 5/12));
   }
   .rights:nth-child(1n) {
     margin-right: 20px;
@@ -933,7 +933,7 @@ footer > div {
   .tagline {
     -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-    width: calc(99.99% * 3/12 - (20px - 20px * 3/12));
+    width: calc(99.9% * 3/12 - (20px - 20px * 3/12));
   }
   .tagline:nth-child(1n) {
     margin-right: 20px;
@@ -951,9 +951,9 @@ footer > div {
   .footerNav {
     -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-    width: calc(99.99% * 6/12 - (20px - 20px * 6/12));
-    margin-left: calc(99.99% * (-1/12 * -1) - (20px - 20px * (-1/12 * -1)) + 20px) !important;
-    margin-right: calc(99.99% * 1/12 - (20px - 20px * 1/12) + (20px * 2)) !important;
+    width: calc(99.9% * 6/12 - (20px - 20px * 6/12));
+    margin-left: calc(99.9% * (-1/12 * -1) - (20px - 20px * (-1/12 * -1)) + 20px) !important;
+    margin-right: calc(99.9% * 1/12 - (20px - 20px * 1/12) + (20px * 2)) !important;
   }
   .footerNav:nth-child(1n) {
     margin-right: 20px;
