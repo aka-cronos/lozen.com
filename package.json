@@ -17,16 +17,16 @@
   },
   "homepage": "https://github.com/aka-cronos/lozen.com#readme",
   "devDependencies": {
-    "autoprefixer": "^6.3.3",
+    "autoprefixer": "^6.4.1",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-imagemin": "^3.0.3",
     "gulp-livereload": "^3.8.1",
-    "gulp-postcss": "^6.1.0",
-    "gulp-stylus": "^2.3.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-stylus": "^2.5.0",
     "gulp-uglify": "^2.0.0",
-    "lost": "^7.0.4",
-    "rucksack-css": "^0.8.5",
+    "lost": "^7.1.0",
+    "rucksack-css": "^0.8.6",
     "rupture": "^0.6.1"
   },
   "dependencies": {
